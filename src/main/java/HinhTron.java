@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class HinhTron extends HinhChuNhat{
+public class HinhTron extends DanhSachManhDat{
     private int x;
     private int banKinh;
     public HinhTron() {
@@ -21,7 +21,12 @@ public class HinhTron extends HinhChuNhat{
     }
 
     public String toString() {
-        String ht = "Toa do X: " + this.x + "\nBan kinh: " + this.banKinh;
+        String ht = "Toa do X: " + this.x + ", Ban kinh: " + this.banKinh;
         return ht;
+    }
+
+    public int tongTien(int giaDat) {
+        int tongTien = (int) ((Math.pow(this.banKinh, 2) / 4) * Math.PI);
+        return tongTien;
     }
 }

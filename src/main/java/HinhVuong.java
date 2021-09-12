@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class HinhVuong extends HinhChuNhat{
+public class HinhVuong extends DanhSachManhDat{
     private int dTrai;
     private int dTren;
     private int cRong;
@@ -26,8 +26,13 @@ public class HinhVuong extends HinhChuNhat{
 
     }
     public String toString() {
-        String hcn = "Trai: " + this.dTrai + "\nTren: " + this.dTren +
-                "\nChieu rộng: " + this.cRong;
+        String hcn = "Trai: " + this.dTrai + ", Tren: " + this.dTren +
+                ", Chieu rộng: " + this.cRong;
         return hcn;
+    }
+
+    public int tongTien(int giaDat) {
+        int tongTien = (this.cRong * this.cRong) * giaDat;
+        return tongTien;
     }
 }

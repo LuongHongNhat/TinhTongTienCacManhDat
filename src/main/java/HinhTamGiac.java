@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class HinhTamGiac extends HinhChuNhat{
+public class HinhTamGiac extends DanhSachManhDat{
     public HinhTamGiac() {
 
     }
@@ -25,7 +25,12 @@ public class HinhTamGiac extends HinhChuNhat{
         this.diemZ = input.nextInt();
     }
     public String toString() {
-        String htg = "Toa do X: " + this.diemX + "\nToa do Y: " + this.diemY + "\nToa do Z: " + this.diemZ;
+        String htg = "Toa do X: " + this.diemX + ", Toa do Y: " + this.diemY + ", Toa do Z: " + this.diemZ;
         return htg;
+    }
+
+    public int tongTien(int giaDat) {
+        int tongTien = 0;
+        return tongTien;
     }
 }
